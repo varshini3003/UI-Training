@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+header{    
+    color: white;
+    padding: 30px; 
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; 
+    background-color: #145f94;  
+    font-size: larger;   
+}
+.television{
+    color: white;
+    padding: 18px; 
+    font-family: "Roboto", sans-serif;
+    background-color: #145f94;  
+    font-weight: bold;    
+    font-size: large;
+}
+.div-container{     
+   width: 61%;   
+}
+.div-container2{
+   float: right;
+   width:37.7%; 
+}
+.content{
+    text-align: justify;
+    border:1px solid #145f94;
+    line-height: 1.5;
+    padding: 20px; 
+    font-size: larger;
+    background-color: #f6f6f6;
+}
+.star, .sony, .zee{
+    margin-top: 20px;
+}
+.whole{    
+    margin: 40px 170px 100px 170px;
+}
