@@ -23,7 +23,7 @@ header{
 }
 .div-container2{
    float: right;
-   width:37.7%; 
+   width:37.9%; 
 }
 .content{
     text-align: justify;
@@ -34,7 +34,7 @@ header{
     background-color: #f6f6f6;
 }
 .star, .sony, .zee{
-    margin-top: 20px;
+    margin-top: 18px;
 }
 .whole{    
     margin: 40px 170px 100px 170px;
