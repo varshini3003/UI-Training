@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding:0;
 }  
 header{    
     color: white;
@@ -40,7 +41,7 @@ p{
     font-family: Roboto;   
 }
 .bigger{
-    font-size: 30pt;
+    font-size: 45px;
     font-weight: 300;   
     color: #7a1755;    
     margin-bottom:30px;  
@@ -49,8 +50,8 @@ footer{
     width: 100%;
     background-color: #7a1755;
     font-family: "Roboto", sans-serif;
-    font-weight: bold; 
-    font-size: smaller;
+    font-weight: 700; 
+    font-size: 13px;
     color: white;  
     text-align: left;   
     margin: auto;
@@ -59,15 +60,15 @@ footer{
     padding-left: 60px;
 }
 .place{
-    font-size: smaller;
+    font-size: 13px;
 }
 button{
-    padding: 10px 25px; 
+    padding: 10px 28px; 
     background-color: #7a1755;  
     border: solid 1px #7a1755; 
     color: white;    
     text-align: center;
-    font-size: small;
+    font-size: 15px;
 }
 .lorem-content2{
     margin-left: auto; 
@@ -77,17 +78,17 @@ button{
     height: 60%;
     width: 85%;
     line-height: 1.5;    
-    font-size: 15pt; 
+    font-size: 20px; 
     font-weight: 200;  
 }
 .lorem-content{
     margin-top: 20px;
     margin-bottom: 18px;
-    font-size: 10pt; 
+    font-size: 13px; 
     font-weight: 300; 
     line-height: 1.4;
 }
 .footer-content{
-    font-size: 8pt;
+    font-size: 10px;
     font-weight: 300;
 }
