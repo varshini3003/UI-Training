@@ -13,10 +13,6 @@ for(let i=0; i<11; i++)
     players[i]=players[i]+"-"+(i+1);
 }
 console.log(players);
-jerseys = new Array();
-for(let i=0; i<11; i++)
-{
-    jerseys[i]= players[i].toUpperCase();
-}
+jerseys = players.map(player => player.toUpperCase());
 console.log(jerseys);
 console.log(players);
