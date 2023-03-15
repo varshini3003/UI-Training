@@ -18,7 +18,8 @@ header{
     font-weight: bold;    
     font-size: large;
 }
-.div-container{     
+.div-container{  
+   float: left;   
    width: 61%;   
 }
 .div-container2{
