@@ -35,7 +35,7 @@ header{
     width:37.7%;    
 }
 .clearfix{
-    clear: right;
+    clear: both;
 }
 
 .whole{
