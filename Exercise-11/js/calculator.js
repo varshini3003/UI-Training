@@ -15,7 +15,7 @@ function calculate(event)
     }
     choice = parseInt(prompt("Press 1 for Addition, 2 for Subtraction, 3 for Multiplication and 4 for Division"));
     
-    calculator = {
+    const calculator = {
         addition: "Addition", add(a, b) {
             return a+b;
         },
@@ -29,6 +29,7 @@ function calculate(event)
             return a/b;
         }
     }
+    
     switch(choice)
     {
         case 1:  
