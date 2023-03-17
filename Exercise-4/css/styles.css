@@ -4,39 +4,50 @@
 }
 header{    
     color: white;
-    padding: 30px; 
+    height: 87px;
+    padding: 32px 70px 0px 34px;
     font-family: "Roboto", sans-serif;
-    font-weight: bold; 
+    font-weight: 500; 
+    text-align: center;
     background-color: #145f94;  
-    font-size: larger;   
+    font-size: 21.6px; 
+    letter-spacing: 0.2px;    
 }
 .television{
     color: white;
-    padding: 18px; 
+    padding: 17px 17px 17px 27px; 
     font-family: "Roboto", sans-serif;
     background-color: #145f94;  
-    font-weight: bold;    
-    font-size: large;
+    font-weight: 500;    
+    font-size: 21px;
+    height: 54px;
+    letter-spacing: 0.5px;
 }
-.div-container{  
+.left-container{  
    float: left;   
    width: 61%;   
 }
-.div-container2{
+.right-container{
    float: right;
-   width:37.9%; 
+   width: 39%; 
+   padding-left: 21px;
 }
 .content{
+    font-family: "Roboto", sans-serif;
     text-align: justify;
     border:1px solid #145f94;
     line-height: 1.5;
-    padding: 20px; 
-    font-size: larger;
+    padding: 22px 26px 22px 25px; 
+    font-size: 17px;
+    letter-spacing: 0.32px;
     background-color: #f6f6f6;
 }
-.star, .sony, .zee{
-    margin-top: 18px;
+.star-tv{
+    margin-top: 25px;
 }
-.whole{    
-    margin: 40px 170px 100px 170px;
+.sony, .zee{
+    margin-top: 20px;
+}
+.container{    
+    margin: 37px 145px 1025px 145px;
 }
