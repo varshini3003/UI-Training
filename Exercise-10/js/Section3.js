@@ -7,8 +7,7 @@ function displayNumbers()
 }
 function displayDate()
 {
-    var datetime = new Date();
-    let formatted_date = datetime.getDate() + "/" + (datetime.getMonth()+1) + "/" + datetime.getFullYear();
+    const formatted_date = new Date().toLocaleDateString('en-GB');
     console.log("Today's date: "+formatted_date);
 }
 
