@@ -7,146 +7,179 @@ img{
     width: 100%;
 }
 .dropbtn {
-    padding: 35px;
+    padding: 34px;
     border-color: #343333;
     border: solid;
     border-radius: 50%;
-    margin-bottom: 25px; 
+    margin-bottom: 15px;   
     background-color: #d8d8d8;      
 }
-.sub-body{
-   
-    margin-top: 20px;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-bottom: 200px;
+.fashion-layout{
+    margin: 77px 100px 1250px 118px;
 }
 .dropdown {
     position: relative;
     display: inline-block;
-    left: 94%;       
-    bottom: 70px;
+    left: 92.5%;   
+    bottom: 85px;
 }
-.row{
+.card{
     float: left;
     width: 25%;
     padding: 25px;   
 }    
 .caption{
-    color: white;
-    padding-top: 10px;
-    font-size: larger;
+    color: #e3e3e4;
+    padding-top: 15px;
+    font-size: 23px;
+    letter-spacing: 0.5px;
     font-family: "Roboto", sans-serif;
 }
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1; 
-    width: 250px;      
+    width: 265px;      
     z-index: 1;  
     right: 0%;
+    padding: 18px 0px 16px 22px;
 }
 .dropdown-content a {
     color: black;
-    font-weight: bold;
-    padding: 12px 16px;
+    font-weight: bold;  
+    padding: 8px;
     text-decoration: none;
     display: block;
     font-family: "Roboto", sans-serif;
-    background-color: white;    
+    background-color: #f1f1f1;    
 }
-.first-line{
+.logo-header{
     width: 100%;
-    margin-top: 60px;
-    margin-left: 20px;
+    margin-left: 24px; 
+}
+.shirt-set{
+    position: relative;
+    bottom: 60px;
+}
+.next-shirt-set{
+    position: relative;
+    bottom: 50px;
 }
 .black-container{
     position: relative;
-    width: 340px;
-    height: 420px;
+    width: 325px;
+    height: 410px;
     background-color: #24252a;
 }
 .image{
     position: absolute;
-    top:18%;
-    left: 20%;
-    width: 200px;
-    height: 250px;
+    top: 22%;
+    left: 21%;
+    width: 180px;
+    height: 240px;
     background-color: #24252a;
 }    
+.pink-shirt{
+    width: 178px;
+    height: 250px;
+    top: 21%;
+}
+.round-neck{
+    width: 242px;
+    left: 12%;
+}
+.sweatshirt{
+    width: 230px;
+    height: 250px;
+    left: 13%;
+    top: 20%;
+}
 .green-circle{
     position: absolute;
     background-color: #88b181;
     border-radius: 50%;
     border: solid #88b181;
-    width: 50px;
-    height: 50px;
-    bottom:-6%;
-    right: 6%;
+    width: 56px;
+    height: 56px;
+    top: 378px;
+    right: 7%;
 }
-.star{
+.mystar{
     position: absolute;    
     background-color: #24252a;
-    font-size: x-large;
-    top:4%;
-    right: 6%; 
+    font-size: 24px;
+    top:5%;
+    right: 7%; 
     color: #88b181; 
 }
 .shirt-size{
     position: absolute;
     color: #111111;
-    bottom: 30%;
+    bottom: 25%;
     right: 35%;
     background-color: #88b181;
-    font-size: larger;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 500;
     font-family: "Roboto", sans-serif;
 }
-.logo{
-    width: 180px;
-    height: 60px;
+.medium-size{
+    right: 30%;
 }
-.first-row{
-    margin-top: -50px;
+.logo{
+    width: 190px;
+    height: 70px;
+
 }
 button{
-    color: gainsboro;
-    border: 1px solid gainsboro;
+    color: #979797;
+    border: 1px solid #979797;
+    width: 143px;
+    font-size: 16px;
+    font-weight: 500;
     padding: 10px;
     font-family: "Roboto", sans-serif;
 }
 .dropdown-content a:hover {background-color: #ddd;}
-.dropdown:hover .dropdown-content {display: block;}
-.static {
-    position: static;
-    border: 3px solid #73AD21;
-}
-.fixed {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    font-size: larger;
-    text-align: center;
-    height: 9%;
-    padding-top: 30px ;    
-    display: flex;
-    justify-content: space-evenly;    
-}
-.fixed div, pre{
-    background-color: black;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;   
-}
+.dropbtn:hover {cursor: pointer;}
+.dropdown:hover .dropdown-content {display: block; }
 .rupee{
-    color: gainsboro;
-    font-size: large;
-    padding-top: 2px;
+    color: #979797;
+    font-size: 22px;
+    padding: 6px 0px 12px 0px;
     font-family: "Roboto", sans-serif;
 }
 button:hover{
     cursor: pointer;
+    background-color: #979797;
+    color: #111111;
 }  
+.mystar:hover{
+    cursor: pointer; 
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 9px 0px 9px 525px;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%; 
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: #dbdbdb;
+    font-size: 23px;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+}  
+li a:hover{
+    background-color: #343333;
+}
+  

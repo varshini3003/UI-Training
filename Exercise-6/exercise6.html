@@ -3,13 +3,16 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="http://127.0.0.1:5500/Exercise-6/css/styling.css">
+        <link rel="stylesheet" href="./css/styling.css">
     </head>
     <body>
-        <div class="sub-body">
-            <div class="first-line">
-                <div class="logo"><img src="products/logo.png"></div>
+        <div class="fashion-layout">
+            <div class="logo-header">
+                <!-- START:: OUR LOGO -->
+                <div class="logo"><img src="products/logo.png" alt="Product Logo"></div>
+                <!-- END:: OUR LOGO -->
                 <div class="dropdown">     
                     <div class="dropbtn"></div>
                     <div class="dropdown-content">
@@ -20,109 +23,119 @@
                     </div>
                 </div>   
             </div>
-            <div class="first-row">
-                <div class="row row1-margin" id="shirt">
+            <!-- START:: SHIRT COLLECTIONS-->   
+            <div class="shirt-set">
+                <div class="card">
                     <div class="black-container">
-                        <div class="star">☆</div>
-                        <img class="image" src="products/shirt.png">
+                        <i class="fa fa-star-o mystar"></i>
+                        <img class="image" src="products/shirt.png" alt="Bath Wardrobe">
                         <div class="green-circle">
                             <div class="shirt-size">S</div>
                         </div>   
                     </div>
-                    <p class="caption">Bath Wardrobe<br></p>  
-                    <p class="rupee">$ 850</p> <br>
+                    <p class="caption">Bath Wardrobe</p>  
+                    <p class="rupee">₹ 850</p> 
                     <button>ADD TO CART</button>
                 </div>
-                <div class="row row1-margin" id="jacket">
+                <div class="card">
                     <div class="black-container">
-                        <div class="star">☆</div>
-                        <img class="image" src="products/jacket.png">
+                        <i class="fa fa-star-o mystar"></i>
+                        <img class="image pink-shirt" src="products/jacket.png" alt="Winter Jacket">
                         <div class="green-circle">
-                            <div class="shirt-size">M</div>
+                            <div class="shirt-size medium-size">M</div>
                         </div>
                     </div>
-                    <p class="caption">Winter Jacket<br></p> 
-                    <p class="rupee">$ 2399</p> <br>  
+                    <p class="caption">Winter Jacket</p> 
+                    <p class="rupee">₹ 2399</p> 
                     <button>ADD TO CART</button>
                 </div>
-                <div class="row row1-margin" id="tshirt">
+                <div class="card">
                     <div class="black-container">
-                        <div class="star">☆</div>
-                        <img class="image" src="products/tshirt.png">
+                        <i class="fa fa-star-o mystar"></i>
+                        <img class="image round-neck" src="products/tshirt.png" alt="Red Round Neck">
                         <div class="green-circle">
                             <div class="shirt-size">S</div>
                         </div>
                     </div>    
-                    <p class="caption">Read Round Neck<br></p> 
-                    <p class="rupee">$ 350</p> <br>     
+                    <p class="caption">Red Round Neck</p> 
+                    <p class="rupee">₹ 350</p>     
                     <button>ADD TO CART</button>
                 </div>
-                <div class="row row1-margin" id="sweatshirt">
+                <div class="card">
                     <div class="black-container">
-                        <div class="star">☆</div>
-                        <img class="image" src="products/sweatshirt.png">
+                        <i class="fa fa-star-o mystar"></i>
+                        <img class="image sweatshirt" src="products/sweatshirt.png" alt="Sweat Shirt">
                         <div class="green-circle">
                             <div class="shirt-size">S</div>
                         </div>
                     </div>  
-                    <p class="caption">Sweat Shirt<br></p>
-                    <p class="rupee">$ 1350</p> <br>    
+                    <p class="caption">Sweat Shirt</p>
+                    <p class="rupee">₹ 1350</p>    
                     <button>ADD TO CART</button>
                 </div>     
             </div>
-            <div class="second-row">
-                <div class="row row1-margin" id="shirt">
+            <div class="next-shirt-set">
+                <div class="card">
                     <div class="black-container">
-                        <div class="star">☆</div>
-                        <img class="image" src="products/shirt.png">
+                        <i class="fa fa-star-o mystar"></i>
+                        <img class="image" src="products/shirt.png" alt="Bath Wardrobe">
                         <div class="green-circle">
                             <div class="shirt-size">S</div>
                         </div>   
                     </div>
-                    <p class="caption">Bath Wardrobe<br></p>
-                    <p class="rupee">$ 850</p> <br>   
+                    <p class="caption">Bath Wardrobe</p>
+                    <p class="rupee">₹ 850</p>   
                     <button>ADD TO CART</button>
                 </div>
-                <div class="row row1-margin" id="jacket">
+                <div class="card">
                     <div class="black-container">
-                        <div class="star">☆</div>
-                        <img class="image" src="products/jacket.png">
+                        <i class="fa fa-star-o mystar"></i>
+                        <img class="image pink-shirt" src="products/jacket.png" alt="Winter Jacket">
                         <div class="green-circle">
-                            <div class="shirt-size">M</div>
+                            <div class="shirt-size medium-size">M</div>
                         </div>
                     </div>
-                    <p class="caption">Winter Jacket<br></p>
-                    <p class="rupee">$ 2399</p> <br>   
+                    <p class="caption">Winter Jacket</p>
+                    <p class="rupee">₹ 2399</p>    
                     <button>ADD TO CART</button>
                 </div>
-                <div class="row row1-margin" id="tshirt">
+                <div class="card">
                     <div class="black-container">
-                        <div class="star">☆</div>
-                        <img class="image" src="products/tshirt.png">
+                        <i class="fa fa-star-o mystar"></i>
+                        <img class="image round-neck" src="products/tshirt.png" alt="Red Round Neck">
                         <div class="green-circle">
                             <div class="shirt-size">S</div>
                         </div>
                     </div>    
-                    <p class="caption">Read Round Neck<br></p>
-                    <p class="rupee">$ 350</p> <br>      
+                    <p class="caption">Red Round Neck</p>
+                    <p class="rupee">₹ 350</p>      
                     <button>ADD TO CART</button>
                 </div>
-                <div class="row row1-margin" id="sweatshirt">
+                <div class="card">
                     <div class="black-container">
-                        <div class="star">☆</div>
-                        <img class="image" src="products/sweatshirt.png">
+                        <i class="fa fa-star-o mystar"></i>
+                        <img class="image sweatshirt" src="products/sweatshirt.png" alt="Sweat Shirt">
                         <div class="green-circle">
                             <div class="shirt-size">S</div>
                         </div>
                     </div>  
-                    <p class="caption">Sweat Shirt<br></p> 
-                    <p class="rupee">$ 1350</p> <br>    
+                    <p class="caption">Sweat Shirt</p> 
+                    <p class="rupee">₹ 1350</p>     
                     <button>ADD TO CART</button>
                 </div>  
-            </div>    
-            <div class="fixed">
-                <pre>Jackets          Shirts         Trousers         Pants          Shoes</pre>
-            </div>          
-        </div>        
+            </div>        
+            <!-- END:: SHIRT COLLECTIONS-->       
+        </div>  
+        <!-- START:: OTHER COLLECTIONS-->
+        <div>
+            <ul>
+                <li><a href="#">Jackets</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Trousers</a></li>
+                <li><a href="#">Pants</a></li>
+                <li><a href="#">Shoes</a></li>
+              </ul>
+        </div> 
+        <!-- END:: OTHER COLLECTIONS-->   
     </body>
 </html>
