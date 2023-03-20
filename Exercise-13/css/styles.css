@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: #3b1c67;
+    color: #f7f5f8;
+    padding: 37px 0px 0px 35px;
+    font-size: 25px;
+    height: 100px;
+}
+.set-margin{
+    margin: 65px 90px 65px 95px;
+}
+.name{
+    color: #fcfdfe;
+    font-size: 20px;
+    padding-bottom: 2px;
+}
+.email{
+    color: #e3e6f3;
+    font-size: 15px;
+}    
+.content{
+    padding: 13px 19px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+.card{
+    height: 105px;
+    width: 32.6%;
+    display: flex;     
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: #4d66b4;
+}    
+img{
+    border-radius: 50%;
+    height: 71px;
+    width: 71px;
+
+}
