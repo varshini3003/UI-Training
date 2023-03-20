@@ -1,19 +1,22 @@
 *{
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+/*  HEADING - STYLING */
 header{
     background-color: #3b1c67;
     color: #f7f5f8;
     padding: 37px 0px 0px 35px;
     font-size: 25px;
+    font-weight: 300;
     height: 100px;
 }
 .set-margin{
     margin: 65px 90px 65px 95px;
 }
+/*  Name and Email - STYLING */
 .name{
     color: #fcfdfe;
     font-size: 20px;
@@ -26,6 +29,7 @@ header{
 .content{
     padding: 13px 19px;
 }
+/* Row & Card - STYLING */
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -39,9 +43,9 @@ header{
     padding: 15px;
     background-color: #4d66b4;
 }    
+/* Image - STYLING */
 img{
     border-radius: 50%;
     height: 71px;
     width: 71px;
-
 }
