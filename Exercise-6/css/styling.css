@@ -142,7 +142,7 @@ button{
 .dropdown-content a:hover {background-color: #ddd;}
 .dropbtn:hover {cursor: pointer;}
 .dropdown:hover .dropdown-content {display: block; }
-.rupee{
+.price{
     color: #979797;
     font-size: 22px;
     padding: 6px 0px 12px 0px;
@@ -180,6 +180,8 @@ li a{
     text-decoration: none;
 }  
 li a:hover{
-    background-color: #343333;
+    cursor: pointer;  
 }
-  
+.logo:hover{
+    cursor: pointer;  
+}
