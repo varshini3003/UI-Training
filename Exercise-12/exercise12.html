@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MATH KIDS</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script type="text/javascript" src="./js/myscript.js"></script>   
+    </head>
+    <body>
+        <div class="head">
+            <ul>
+                <li class="math"><a href="#">MATH KIDS</a></li>
+                <li><a href="#">KIDS LEARNING APP</a></li>
+            </ul> 
+        </div>
+        
+        <div class="black-container">
+            <!--START:: Section-1-->
+            <div id="section-1">
+                <div id="choose"></div>
+                <div id="shapes"></div>
+                <div id="tick"></div>
+                <button id="next-button" onclick="goToSection2();">NEXT</button>
+            </div>
+            <!--END:: Section-1-->
+            <!--START:: Section-2-->
+            <div id="section-2">
+                <div id="label"></div><br><br><br>
+                <input type="number" id="side" class="input-box" /><br><br>
+                <button id="calculate" onclick="goToSection3();">CALCULATE</button>
+            </div>
+            <!--END:: Section-2-->
+            <!--START:: Section-3-->
+            <div id="section-3">
+                <div id="result-label"></div>
+                <button id="restart" onclick="goBackToSection1();">START AGAIN</button>
+            </div>
+            <!--END:: Section-3-->
+        </div>
+
+        <script>
+
+            // Labels to be displayed for Section - 2
+            const labels = { 
+                circleLabel: "2. Enter Radius",
+                triangleLabel: "2. Enter side (Base & height)",
+                squareLabel: "2. Enter side" 
+            };
+
+            // Area of each shape stored in object
+            const areaOperations = {
+                circleArea: "Circle Area", areaOfCircle(radius){
+                    return (3.14*radius*radius).toFixed(2);
+                },
+                triangleArea: "Triangle Area", areaOfTriangle(base){
+                    return (0.433*base*base).toFixed(2);
+                },
+                squareArea: "Square area", areaOfSquare(side){
+                    return (side*side).toFixed(2);
+                },
+            };
+
+            // Perimeter of each shape stored in object
+            const perimeterOperations = {
+                circleCircum: "Circle Perimeter", perimeterOfCircle(radius){
+                    return (2*3.14*radius).toFixed(2);
+                },
+                triangleCircum: "Triangle Perimeter", perimeterOfSquare(side){
+                    return (4*side).toFixed(2);
+                },
+                squareCircum: "Square Perimeter", perimeterOfTriangle(base){
+                    return (3*base).toFixed(2);
+                }
+            };
+
+            // Result table to be displayed
+            const results = {
+                circleResult: [["RADIUS", "r", 5],["AREA", "πr^2", 78.53],["PERIMETER", "2πr", 31.41]],
+                triangleResult: [["SIDE", "s", 5],["AREA", "0.433 * s * s", 10.85],["PERIMETER", "3 * s", 15]],
+                squareResult: [["SIDE", "s", 5],["AREA", "s * s", 25],["PERIMETER", "4 * s", 20]]
+            };
+
+            // Result labels to be displayed
+            const resultLabels = {
+                circleResLabel: "Circle", triangleResLabel: "Equilateral Triangle", squareResLabel: "Square"
+            }; 
+
+            // Choose element
+            const choose = document.createElement("div");
+            choose.innerText="1. Choose a Shape";
+            choose.style.color = "white";
+            choose.style.fontSize = "55px";
+            choose.style.textAlign = "center";
+            document.getElementById("choose").appendChild(choose);
+
+            // Circle element
+            const circle = document.createElement("div");   
+            circle.setAttribute("id","circle");
+            document.getElementById('shapes').appendChild(circle); 
+            
+            //Triangle element
+            const triangle = document.createElement("div"); 
+            triangle.setAttribute("id","triangle");
+            document.getElementById('shapes').appendChild(triangle);  
+
+            //Square element
+            const square = document.createElement("div");
+            square.setAttribute("id", "square");
+            document.getElementById('shapes').appendChild(square); 
+
+            const Shapes = document.getElementById("shapes");
+            const allShapes = Shapes.getElementsByTagName("div");
+            const tickSymbol = document.getElementById("tick");
+            for(let currShape of allShapes){
+                currShape.addEventListener("mouseover", () => {
+                    currShape.style.cursor = "pointer";
+                });
+                currShape.addEventListener("click", () => {
+                    document.getElementById("next-button").style.display="block";
+                    tickSymbol.style.display = "block";
+                });
+            }   
+
+            var clicked='';           
+            circle.addEventListener("click", () => {    
+                tickSymbol.style.left = "36%";
+                tickSymbol.style.bottom = "38%";
+                clicked = 'Circle';
+            });
+            triangle.addEventListener("click", () => {  
+                tickSymbol.style.left = "49%";
+                tickSymbol.style.bottom = "36%";
+                clicked = 'Triangle';
+            });
+            square.addEventListener("click", () => {  
+            tickSymbol.style.left = "62%";
+            tickSymbol.style.bottom = "38%";
+            clicked = 'Square';
+            });
+
+            var area;
+            var perimeter;
+
+            // Section - 2: Displays the corresponding label for the selected shape and reads the input from user.
+            function goToSection2(){
+                let section_1 = document.getElementById("section-1");
+                section_1.style.display="none";
+                let section_2 = document.getElementById("section-2");
+                section_2.style.display="block"; 
+                if(clicked=='Circle'){
+                    document.getElementById("label").innerHTML = labels.circleLabel;
+                } 
+                else if(clicked=='Triangle'){
+                    document.getElementById("label").innerHTML = labels.triangleLabel;
+                }      
+                else if(clicked=='Square'){
+                    document.getElementById("label").innerHTML = labels.squareLabel;
+                }
+            }
+
+            // Section - 3: Displays the result in the form of table and the corresponding shape is displayed.
+            function goToSection3(){
+                var inputValue = document.getElementById("side").value;
+                let section_2 = document.getElementById("section-2");
+                section_2.style.display="none";
+                let section_3 = document.getElementById("section-3");
+                section_3.style.display="block";
+                var output='';
+                if(clicked=='Circle'){    
+                    area = areaOperations.areaOfCircle(inputValue);    
+                    perimeter = perimeterOperations.perimeterOfCircle(inputValue);
+                    results.circleResult[0][2] = inputValue+" cm";
+                    results.circleResult[1][2] = area+" sq cm";
+                    results.circleResult[2][2] = perimeter+" cm";    
+                    output+='<div id="circle" class="shape-position"></div>';
+                    output+='<div>'+resultLabels.circleResLabel+'</div>';
+                    output+='<table>';
+                    for(let i=0; i<3; i++)
+                    {
+                        output+='<tr>';
+                        for(let j=0; j<3; j++)
+                        {
+                            output+='<td>'+results.circleResult[i][j]+'</td>';
+                        }
+                        output+='</tr>';
+                    }
+                    output+='</table>';
+                }
+                else if(clicked=='Triangle'){  
+                    area = areaOperations.areaOfTriangle(inputValue);
+                    perimeter = perimeterOperations.perimeterOfTriangle(inputValue);
+                    results.triangleResult[0][2] = inputValue+" cm";
+                    results.triangleResult[1][2] = area+" sq cm";
+                    results.triangleResult[2][2] = perimeter+" cm";  
+                    output+='<div id="triangle" class="shape-position"></div>';
+                    output+='<div>'+resultLabels.triangleResLabel+'</div>';
+                    output+='<table>';
+                    for(let i=0; i<3; i++)
+                    {
+                        output+='<tr>';
+                        for(let j=0; j<3; j++)
+                        {
+                            output+='<td>'+results.triangleResult[i][j]+'</td>';
+                        }
+                        output+='</tr>';
+                    }
+                    output+='</table>';
+                }
+                else if(clicked=='Square'){   
+                    area = areaOperations.areaOfSquare(inputValue);
+                    perimeter = perimeterOperations.perimeterOfSquare(inputValue);
+                    results.squareResult[0][2] = inputValue+" cm";
+                    results.squareResult[1][2] = area+" sq cm";
+                    results.squareResult[2][2] = perimeter+" cm";  
+                    output+='<div id="square" class="shape-position"></div>';
+                    output+='<div>'+resultLabels.squareResLabel+'</div>';
+                    output+='<table>';
+                    for(let i=0; i<3; i++)
+                    {
+                        output+='<tr>';
+                        for(let j=0; j<3; j++)
+                        {
+                            output+='<td>'+results.squareResult[i][j]+'</td>';
+                        }
+                        output+='</tr>';
+                    }
+                    output+='</table>';
+                }
+                document.querySelector("#result-label").innerHTML = output;
+            }
+
+            // Goes to section 1 
+            function goBackToSection1(){
+                let section_3 = document.getElementById("section-3");
+                section_3.style.display="none";
+                let section_1 = document.getElementById("section-1");
+                section_1.style.display="block";
+                document.getElementById("next-button").style.display="none";
+                document.getElementById("tick").style.display="none";
+            }
+        </script>
+    </body>
+</html>
