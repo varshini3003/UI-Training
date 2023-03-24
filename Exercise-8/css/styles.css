@@ -1,0 +1,144 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;    
+}
+img{
+    width: 100%;   
+}
+.img-container{
+    position: relative;        
+}
+.fluid-container{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3); 
+    width: 100%;  
+    height: 100%;
+    top: 0;
+}
+.dropdown{
+    padding-top: 40px;
+}   
+.dropdown-content{    
+    background-color: black;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: none;
+    height: 765px;
+    width: 270px;
+    padding: 40px;
+    font-size: 22px;
+    animation: hideMe 4s;
+}
+@keyframes hideMe{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.heading{
+    color: white;  
+    font-size: 82px;
+    font-weight: 500;
+    position: absolute; 
+    justify-content: center;   
+    padding-top: 40px;
+    left: 36%;   
+}
+.hat{
+    width: 100px;
+}
+#bar{
+    font-size: 30px;
+    color: white;
+    padding: 30px;
+    background-color: black;
+}
+.dropdown-content a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.dropdown-content a:not(:first-child):hover{
+    background-color: rgb(117, 114, 114);
+    transform: scale(1.4);
+}
+.footer-content, .lifetime{
+    color: white;
+    font-size: 150px;
+    text-align: center;
+}
+.footer-content {
+    position: absolute;
+    font-size: 110px;
+    font-weight: 500;
+    color: #ffffff;
+    left: 550px;
+    bottom: 355px;
+}
+.time{
+    position: absolute;
+    font-size: 144px;
+    font-weight: 500;
+    color: white;
+    left: 550px;
+    bottom: 220px;
+}
+.preposition {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    top: 350px;
+    left: 93%;
+    transform: rotate(270deg);
+}
+.year {
+    position: absolute;    
+    color: white;
+    font-size: 110px;
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    top: 120px;
+    left: 87%;
+    transform: rotate(270deg);
+}
+.fbook{
+    font-size: 30px; color: gray;
+    padding: 10px;
+}        
+.twitter i{        
+   bottom: 198px;
+   right: 4.2%;
+   position: absolute;   
+   font-size: 45px; color: white;
+}    
+.tweet{
+    font-size:48px; 
+    color:white;
+}
+.circle{
+    bottom: 205px;
+    right: 1.3%;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;    
+    position: absolute;
+    background-color: white;    
+}
+.twitter i:hover{
+    cursor: pointer;
+}
+.circle:hover{
+    cursor: pointer;
+}
