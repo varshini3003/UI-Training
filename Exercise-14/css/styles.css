@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans',serif;
+}     
+.gray-container{
+    background-color: #f5f5f5;
+    margin: 0px 43px 0px 43px;
+    height: 120vh;
+}
+.form-container{
+    background-color: white;
+    width: 600px;
+    margin-left: auto;  
+    margin-right: auto;
+    position: relative;
+    bottom: 130px; 
+    padding: 35px 25px 35px 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.billing{
+    margin-bottom: 40px;
+}
+input{
+    padding-left: 10px;
+}
+.sirius-logo{
+    width: 260px;
+    height: 260px;
+    margin-left: auto;  
+    margin-right: auto;
+    position: relative;
+    bottom: 35px;     
+}
+p{
+    color: #001c72;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    font-size: 18px;
+}
+label, .alert-text{
+    font-size: 11px;
+    font-weight: 500;
+}
+.name{
+    display: flex;
+    gap:16px;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+.name > div{
+    width: 50%;   
+}
+.heading{
+    padding-left: 8px;
+}
+#fname, #lname, #mail, #contno, #pincode, #cardno, #cardexpyear, #cvv{
+    height: 40px;
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form-section{
+    margin: 12px 0px 12px 0px;         
+}
+.form-section > div{
+    padding: 8px;
+} 
+.submit-button{
+    width: 97%;
+    height: 40px;
+    border: 1px solid #001c72;
+    border-radius: 5px;
+    background-color: #001c72;
+    color: white;
+    letter-spacing: 0.8px;
+}
+.flex-property{
+    display: flex;
+    justify-content: center;
+}
+.fname-container{
+    margin: auto;
+}
+.submit-button:hover{
+    cursor: pointer;
+}
+#fname-empty-alert, #lname-empty-alert, #mail-empty-alert, #contno-empty-alert, #pincode-empty-alert, #cardno-empty-alert, #cardexpyear-empty-alert, #cvv-empty-alert, #fname-invalid-alert, #lname-invalid-alert, #mail-invalid-alert, #contno-invalid-alert, #pincode-invalid-alert, #cardno-invalid-alert, #cardexpyear-invalid-alert, #cvv-invalid-alert{
+    display: none;
+    padding-top: 4px;
+}
