@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+#moon, #planet{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+}
+#moon{
+    background-color: #DBE6E0;  
+    transform: translate(50%, 50%);
+    box-shadow: 0px 0px 30px rgb(233, 244, 238);
+}
+
+#planet{  
+    background-color: black;
+    right: 10px;
+    top: 5px;   
+    border-radius: 50%;   
+    box-shadow: 0 0 50px rgba(119, 117, 117, 0.2);
+    animation: eclipse 8s 100 linear;
+    transform-origin: 40% 200%; 
+}
+@keyframes eclipse {
+    0% {
+        transform: rotate(160deg); 
+    }
+    95% {
+        transform: rotate(-60deg); 
+    }
+    100%{
+        transform: rotate(-120deg);
+        background-color: #211f1f;
+    }
+}
