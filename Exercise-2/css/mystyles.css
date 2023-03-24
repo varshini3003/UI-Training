@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}  
+header{    
+    color: white;
+    padding: 25px; 
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900; 
+    background-color: #43133e;     
+}
+.content{
+    margin: 40px;
+}
+.card{
+    display: inline-block;
+    width: 33%;
+    padding: 8px;   
+}
+.card1-margin{
+    margin-bottom: 35px;  
+}
+.card2-margin{
+    margin-bottom: 65px;  
+}
+.pic{
+    margin: 0;
+}
+button:hover{
+    cursor: pointer;
+}
+.caption{
+    font-family: "Roboto", sans-serif;
+    font-size: larger;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-weight: 100;
+}
+p{    
+    font-family: Roboto;   
+}
+.bigger{
+    font-size: 45px;
+    font-weight: 300;   
+    color: #7a1755;    
+    margin-bottom:30px;  
+}
+footer{    
+    width: 100%;
+    background-color: #7a1755;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700; 
+    font-size: 13px;
+    color: white;  
+    text-align: left;   
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+}
+.place{
+    font-size: 13px;
+}
+button{
+    padding: 10px 20px; 
+    background-color: #7a1755;  
+    border: solid 1px #7a1755; 
+    color: white;    
+    text-align: center;
+    font-size: 15px;
+}
+.lorem-content2{
+    margin-left: auto; 
+    margin-right: auto;    
+    margin-bottom: 55px;     
+    text-align: justify;
+    height: 60%;
+    width: 85%;
+    line-height: 1.5;    
+    font-size: 20px; 
+    font-weight: 200;  
+}
+.lorem-content{
+    margin-top: 20px;
+    margin-bottom: 18px;
+    font-size: 13px; 
+    font-weight: 300; 
+    line-height: 1.4;
+}
+.footer-content{
+    font-size: 10px;
+    font-weight: 300;
+}
