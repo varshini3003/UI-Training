@@ -1,0 +1,187 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #2a2b30
+}
+img{
+    width: 100%;
+}
+.dropbtn {
+    padding: 34px;
+    border-color: #343333;
+    border: solid;
+    border-radius: 50%;
+    margin-bottom: 15px;   
+    background-color: #d8d8d8;      
+}
+.fashion-layout{
+    margin: 77px 100px 1250px 118px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    left: 92.5%;   
+    bottom: 85px;
+}
+.card{
+    float: left;
+    width: 25%;
+    padding: 25px;   
+}    
+.caption{
+    color: #e3e3e4;
+    padding-top: 15px;
+    font-size: 23px;
+    letter-spacing: 0.5px;
+    font-family: "Roboto", sans-serif;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1; 
+    width: 265px;      
+    z-index: 1;  
+    right: 0%;
+    padding: 18px 0px 16px 22px;
+}
+.dropdown-content a {
+    color: black;
+    font-weight: bold;  
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    background-color: #f1f1f1;    
+}
+.logo-header{
+    width: 100%;
+    margin-left: 24px; 
+}
+.shirt-set{
+    position: relative;
+    bottom: 60px;
+}
+.next-shirt-set{
+    position: relative;
+    bottom: 50px;
+}
+.black-container{
+    position: relative;
+    width: 325px;
+    height: 410px;
+    background-color: #24252a;
+}
+.image{
+    position: absolute;
+    top: 22%;
+    left: 21%;
+    width: 180px;
+    height: 240px;
+    background-color: #24252a;
+}    
+.pink-shirt{
+    width: 178px;
+    height: 250px;
+    top: 21%;
+}
+.round-neck{
+    width: 242px;
+    left: 12%;
+}
+.sweatshirt{
+    width: 230px;
+    height: 250px;
+    left: 13%;
+    top: 20%;
+}
+.green-circle{
+    position: absolute;
+    background-color: #88b181;
+    border-radius: 50%;
+    border: solid #88b181;
+    width: 56px;
+    height: 56px;
+    top: 378px;
+    right: 7%;
+}
+.mystar{
+    position: absolute;    
+    background-color: #24252a;
+    font-size: 24px;
+    top:5%;
+    right: 7%; 
+    color: #88b181; 
+}
+.shirt-size{
+    position: absolute;
+    color: #111111;
+    bottom: 25%;
+    right: 35%;
+    background-color: #88b181;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+.medium-size{
+    right: 30%;
+}
+.logo{
+    width: 190px;
+    height: 70px;
+
+}
+button{
+    color: #979797;
+    border: 1px solid #979797;
+    width: 143px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropbtn:hover {cursor: pointer;}
+.dropdown:hover .dropdown-content {display: block; }
+.price{
+    color: #979797;
+    font-size: 22px;
+    padding: 6px 0px 12px 0px;
+    font-family: "Roboto", sans-serif;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #979797;
+    color: #111111;
+}  
+.mystar:hover{
+    cursor: pointer; 
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 9px 0px 9px 525px;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%; 
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: #dbdbdb;
+    font-size: 23px;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+}  
+li a:hover{
+    cursor: pointer;  
+}
+.logo:hover{
+    cursor: pointer;  
+}
