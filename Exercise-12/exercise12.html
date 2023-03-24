@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MATH KIDS</title>   
+        <link rel="stylesheet" href="./css/styles.css">       
+    </head>
+    <body>
+        <div class="head">
+            <ul>
+                <li class="math"><a href="#">MATH KIDS</a></li>
+                <li><a href="#">KIDS LEARNING APP</a></li>
+            </ul> 
+        </div>      
+        <div class="black-container">
+            <!--START:: Section-1-->
+            <div id="section-1">
+                <div id="choose">1. Choose a Shape</div>
+                <div id="shapes"></div>
+                <div id="tick"></div>
+                <button id="next-button" onclick="goToSection2();">NEXT</button>           
+            </div>
+            <!--END:: Section-1-->
+            <!--START:: Section-2-->
+            <div id="section-2">
+                <div id="label"></div><br><br><br>
+                <input type="number" id="side" class="input-box" min="1" max="10000" /><br><br>
+                <button id="calculate" onclick="goToSection3();">CALCULATE</button>
+            </div>
+            <!--END:: Section-2-->
+            <!--START:: Section-3-->
+            <div id="section-3">
+                <div id="result-label"></div>
+                <button id="restart" onclick="window.location.reload();">START AGAIN</button>
+            </div>
+            <!--END:: Section-3-->
+        </div>
+        <script type="text/javascript" src="./js/myscript.js"></script> 
+    </body>
+</html>
