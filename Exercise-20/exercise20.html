@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Pocket Notes</title>
+        <script src="./js/myscript.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="logo">Pocket Notes</div>
+            <div class="edit-buttons">
+                <button class="click-btn" id="delete-all-btn">DELETE ALL</button>
+                <button class="click-btn" id="new-btn" onclick="openNav()">NEW</button>
+            </div>
+            <div id="transparency-effect">
+                <div id="new-note-panel" class="sidepanel">
+                    <div class="new-note-bar">
+                        <div class="new-note-txt">NEW NOTE</div>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    </div>
+                    <div class="text-inputs">
+                        <input type="text" name="notes-title" id="notes-title" placeholder="Notes Title">	
+                        <input type="text" name="img-url" id="img-url" placeholder="Add image URL"> 	
+                        <textarea type="text" name="note-content" id="note-content" placeholder="Add Content Here"></textarea> 
+                    </div>	
+                    <div class="sidepanel-footer">
+                        <div class="color-palette">
+                            <button class="color-btn" id="lavender-btn"></button>
+                            <button class="color-btn" id="ivory-btn"></button>
+                            <button class="color-btn" id="orange-btn"></button>
+                            <button class="color-btn" id="lightred-btn"></button>
+                        </div>
+                        <button class="click-btn" id="add-btn">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="whole-content" id="whole-content">
+            <div class="empty-msg">
+                <img src="./assets/cube-thin-svgrepo-com.svg" alt="Cube">
+                <div> Notes you add appear here </div>
+            </div>
+        </div>
+        <script>
+            const textarea = document.querySelector("textarea");
+            textarea.addEventListener("input", e =>{
+                let scHeight = e.target.scrollHeight;
+                textarea.style.height = `${scHeight}px`;
+            });
+        </script>
+    </body>  
+</html>
+
