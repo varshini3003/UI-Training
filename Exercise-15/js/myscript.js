@@ -67,7 +67,7 @@ const video_section=document.querySelector("#video-section");
 video_section.append(video);
 
 //Video contents
-const title=document.createElement("h4");
+const title=document.createElement("h3");
 const videoTitle=videos.title;
 title.append(videoTitle);
 video_section.append(title);
@@ -81,16 +81,21 @@ hr.setAttribute('class', 'h-ruler');
 video_section.append(hr);
 
 //Comment section
+const comment_container = document.createElement('div');
+comment_container.setAttribute('class', 'comment-section');
+
+const comment_head = document.createElement('h1');
+comment_head.append('Comments');
+comment_container.append(comment_head);
+
 const comment_section=document.querySelector(".left-container");
 for(let i=0;i<videos.comments.length;i++) {
     const comments=document.createElement("div");
     comments.setAttribute('class','comments');
 
-    const comments_img=document.createElement("div");
     const image=document.createElement("img");
     image.setAttribute('src',videos.comments[i].image);
-    comments_img.append(image);
-    comments.append(comments_img);
+    comments.append(image);
 
     const comments_info=document.createElement("div");
     comments_info.setAttribute('class','comments-info');
@@ -105,16 +110,23 @@ for(let i=0;i<videos.comments.length;i++) {
     description.append(videos.comments[i].comment);
     comments_info.append(description);
     comments.append(comments_info);
-    comment_section.append(comments)
+    comment_container.append(comments);
+    comment_section.append(comment_container);
 }
+
+const hidden_ruler = document.createElement('hr')
+hidden_ruler.setAttribute('class','hidden-ruler')
+left_container.append(hidden_ruler);
 
 //Poster section
 const poster_section=document.querySelector(".right-container");
 const poster_title=document.createElement("h4");
 poster_title.append("Upcoming Projects");
 poster_section.append(poster_title);
-const poster_image=document.createElement("div");
+
 for(let i=0;i<posters.length;i++){
+    const poster_image=document.createElement("div");
+    poster_image.setAttribute('class', 'poster');
     const currPoster=document.createElement("img");
     currPoster.setAttribute('src',posters[i].imageUrl);
     currPoster.setAttribute('alt',posters[i].title);
