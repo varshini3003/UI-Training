@@ -18,8 +18,8 @@ function checkEmpty(element) {
 function nameValid(element) {
     let obj = document.getElementById(element);
     let alert_obj = document.getElementById(element + "-invalid-alert");
-    let regexName = new RegExp(/^[a-zA-Z]+ [a-zA-Z]+$/);
-    if (obj.value.length > 30 || !regexName.test(obj)) {
+    let regexName = new RegExp("^{a-zA-Z}$");
+    if (obj.value.length > 30 && !regexName.test(obj.value)) {
         obj.style.borderColor = "#b32121"; 
         alert_obj.style.display = "block";
         alert_obj.style.color = "#b32121";
