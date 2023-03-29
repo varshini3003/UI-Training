@@ -108,16 +108,15 @@ function cvvValid(element) {
 function mailValid(element) {
     let obj = document.getElementById(element);
     let alert_obj = document.getElementById(element + "-invalid-alert");  
-    var regexMail = new RegExp('[a-z][0-9]+@[a-z]+\.[a-z]{2,3}$');  
+    var regexMail = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');  
+    console.log(regexMail.test(obj.value));
     if ((obj.value.length > 50) || !regexMail.test(obj.value)) {
         obj.style.borderColor = "#b32121"; 
         alert_obj.style.display = "block";
         alert_obj.style.color = "#b32121";
-        return true;
     } else {
         obj.style.borderColor = "#d7d7d7";
         alert_obj.style.display = "none";
-        return false;
     }
 }
 // Checks if the field is empty and validates each field if it is not empty
