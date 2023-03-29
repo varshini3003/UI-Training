@@ -57,6 +57,7 @@ img {
 
 .bold-text {
   color: #b8e986;
+  font-family: "Roboto", sans-serif;
 }
 
 .product {
@@ -69,7 +70,7 @@ img {
   color: #cecece;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-weight: bolder;
+  font-weight: 700;
   font-size: 50px;
   margin: 150px 0px 90px 0px;
 }
@@ -114,10 +115,12 @@ img {
 
 .small-dash {
   width: 35px;
+  border-top: 1px solid white;
 }
 
 .long-dash {
   width: 220px;
+  border-top: 1px solid white;
 }
 
 .social-media {

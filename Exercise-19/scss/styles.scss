@@ -1,11 +1,4 @@
-$color_1: white;
-$color_2: #b8e986;
-$color_3: #4a90e2;
-$color_4: #cecece;
-$font-family_1: 'Roboto Condensed', sans-serif;
-$font-family_2: 'Roboto', sans-serif;
-$background-color_1: black;
-
+@import "_variables";
 * {
 	box-sizing: border-box;
 	background-color: $background-color_1;
@@ -57,20 +50,19 @@ img {
 }
 .bold-text {
 	color: $color_2;
+	font-family: $font-family_2;
 }
 .product {
 	color: $color_3;
 	font-family: $font-family_2;
 	font-weight: 900;
 }
-@mixin margin($t: 0, $r: 0, $b: 0, $l: 0) {
-    margin: $t $r $b $l;
-}
+
 .text {
 	color: $color_4;
 	font-family: $font-family_2;
 	text-align: center;
-	font-weight: bolder;
+	font-weight: 700;
 	font-size: 50px;
     @include margin(150px, 0px, 90px, 0px);
 }
@@ -79,14 +71,6 @@ img {
 	@include margin(100px, 0px, 90px, 0px);
 	color: $color_1;
 	font-size: 20px;
-}
-@mixin flex-wrap-property{
-    display: flex;
-	flex-wrap: wrap; 
-}
-@mixin flex-wrap-margin{
-    @include margin(160px, 175px, 0px, 175px);
-	@include flex-wrap-property;
 }
 .container {
     @include flex-wrap-margin;
@@ -114,9 +98,11 @@ img {
 }
 .small-dash {
 	width: 35px;
+	border-top: 1px solid white;
 }
 .long-dash {
 	width: 220px;
+	border-top: 1px solid white;
 }
 .social-media {
 	@include margin(100px, 0px, 0px, 0px);
