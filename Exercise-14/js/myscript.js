@@ -104,7 +104,7 @@ function cvvValid(element) {
     }
 }
 
-//Checks if the mail is and displays the appropriate message
+//Checks if the mail is valid and displays the appropriate message
 function mailValid(element) {
     let obj = document.getElementById(element);
     let alert_obj = document.getElementById(element + "-invalid-alert");  

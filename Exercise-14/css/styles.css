@@ -9,6 +9,16 @@
     margin: 0px 43px 0px 43px;
     height: 120vh;
 }
+/* Sirius Logo - styling */
+.sirius-logo{
+    width: 260px;
+    height: 260px;
+    margin-left: auto;  
+    margin-right: auto;
+    position: relative;
+    bottom: 35px;     
+}
+/* Form container - styling */
 .form-container{
     background-color: white;
     width: 600px;
@@ -24,14 +34,6 @@
 }
 input{
     padding-left: 10px;
-}
-.sirius-logo{
-    width: 260px;
-    height: 260px;
-    margin-left: auto;  
-    margin-right: auto;
-    position: relative;
-    bottom: 35px;     
 }
 p{
     color: #001c72;
