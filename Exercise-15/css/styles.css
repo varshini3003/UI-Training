@@ -28,6 +28,7 @@ header{
 	width: 46%;
 	font-size: 16px;
 	font-weight: 700;
+	letter-spacing: 0.5px;
 }
 /* User Profile Styling */
 .user{
@@ -40,6 +41,9 @@ header{
 	height: 30px;
 	margin: 10px;
 	border-radius: 50%;
+}
+.user img:hover{
+	cursor: pointer;
 }
 #whole-container{
 	display: flex;
@@ -60,7 +64,10 @@ video{
 }
 #video-section h3{
     padding-top: 15px;
+	font-size: 20px;
+	letter-spacing: 0.5px;
 }
+
 h3{
 	padding: 8px 0;
 }
@@ -70,12 +77,13 @@ h3{
 }
 #video-section p{
 	line-height: 1.8;
-	font-size: 11px;
+	font-size: 12px;
+	font-weight: 300;
 }
 .h-ruler, .hidden-ruler {
 	width: 100%;
 	border: solid 0.5px #e0e0e0;
-	margin: 20px 0;
+	margin-top: 20px;
 }
 .hidden-ruler{
 	display: none;
@@ -87,9 +95,8 @@ h3{
     row-gap: 20px;
 }
 .comment-section h1{
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 600;
-    letter-spacing: 1px;
 }
 .comments {
 	display: flex;
@@ -125,6 +132,7 @@ h3{
 	padding-top: 3px;
 	line-height: 17px;
 	font-size: 11px;
+	letter-spacing: 0.2px;
 }
 .messenger img {
 	position: fixed;
@@ -133,6 +141,9 @@ h3{
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
+}
+.messenger img:hover{
+	cursor: pointer;
 }
 footer{
 	width: 100%;
@@ -153,6 +164,9 @@ footer{
 		flex-wrap: wrap;
 		padding: 10px;
 		background-color: white;
+	}
+	.logo{
+		width: 72%;
 	}
 	body{
 		padding: 0;
@@ -177,5 +191,6 @@ footer{
     }
 	.hidden-ruler{
 		display: block;
+		margin: 0px 0px 15px 0px;
 	}
 }

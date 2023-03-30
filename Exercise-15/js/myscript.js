@@ -4,7 +4,7 @@ import posters from "./json/posters.json" assert{type: 'json'};
 const comments=videos['comments'];
 const left_container= document.querySelector(".left-container");
 
-//Video Section
+//This part of the code creates a video section where video details are retrieved and stored and appends it to the left container
 const video=document.createElement("video");
 video.setAttribute('src',videos.videoUrl);
 video.setAttribute('type','video/mp4');
@@ -13,7 +13,6 @@ video.setAttribute('controls','true');
 const video_section=document.querySelector("#video-section");
 video_section.append(video);
 
-//Video contents
 const title=document.createElement("h3");
 const videoTitle=videos.title;
 title.append(videoTitle);
@@ -27,7 +26,7 @@ const hr=document.createElement("hr");
 hr.setAttribute('class', 'h-ruler');
 video_section.append(hr);
 
-//Comment section
+//This part of the code creates a comment section where comment details are retreived and stored and appends it to the left container
 const comment_container = document.createElement('div');
 comment_container.setAttribute('class', 'comment-section');
 
@@ -36,7 +35,7 @@ comment_head.append('Comments');
 comment_container.append(comment_head);
 
 const comment_section=document.querySelector(".left-container");
-for(const comment of comments) {
+for(let comment of comments) {
     const comments=document.createElement("div");
     comments.setAttribute('class','comments');
 
@@ -65,7 +64,7 @@ const hidden_ruler = document.createElement('hr')
 hidden_ruler.setAttribute('class','hidden-ruler')
 left_container.append(hidden_ruler);
 
-//Poster section
+//This part of the code creates a poster section where poster images are retrieved and stored and appends it to the left container
 const poster_section=document.querySelector(".right-container");
 const poster_title=document.createElement("h4");
 poster_title.append("Upcoming Projects");
