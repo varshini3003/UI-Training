@@ -7,31 +7,32 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel='stylesheet' href='./css/styles.css'>
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     </head>
     <body>
         <header>
             <div class="logo">Blender Movies</div>
             <div class="user">
                 <div>Steffy Jerry</div>
-                <img src="./images/angela.png"/>
+                <img src="./images/angela.png" alt="Steffy image"/>
             </div>
         </header>
         <div id="whole-container">
-            <div class="container">
-                <div class="left-container"></div>
-                <div class="right-container">
-                    <h4>Upcoming Projects</h4>
-                </div>
+            <!--START:: Video section and comments section-->
+            <div class="left-container">
+                <div id="video-section"></div>
             </div>
+            <!--END:: Video section and comments section-->
+            <!--START:: Poster section-->
+            <div class="right-container"></div>
+            <!--END:: Poster section-->   
         </div>
-        <div class="message">
+        <div class="messenger">
             <img src="./images/messenger.jpeg" alt="messenger"/>
         </div>
         <footer>
-            <div class="footer-content">&copy; Copyrights 2022</div>
+            <div class="copyrights">&copy; Copyrights 2022</div>
             <div class="footer-content">Blender Movies</div>
-        </footer>  
-        <script src='./js/myscript.js' type="text/javascript"></script>
+        </footer>
+        <script src="./js/myscript.js" type="module"></script>
     </body>
 </html>
