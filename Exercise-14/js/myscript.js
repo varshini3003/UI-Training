@@ -10,7 +10,7 @@ function noAlert(obj, alert_obj){
 
 /**
  * Checks if the field is empty and displays the appropriate message
- * @param {*} element - Input element
+ * @param {element}  - Input element
  * @returns true or false
  */
 function checkEmpty(element) {
@@ -32,7 +32,7 @@ function checkEmpty(element) {
 
 /**
  * Checks if the name is valid and displays the appropriate message
- * @param {*} element - Input element
+ * @param {element}  - Input element
  */
 function nameValid(element) {
     let obj = document.getElementById(element);
@@ -49,7 +49,7 @@ function nameValid(element) {
 
 /**
  * Checks if the contact number is valid and displays the appropriate message
- * @param {*} element - Input element
+ * @param {element}  - Input element
  */
 function contactValid(element) {
     let obj = document.getElementById(element);
@@ -66,7 +66,7 @@ function contactValid(element) {
 
 /**
  * Checks if the pin number is valid and displays the appropriate message
- * @param {*} element - Input element
+ * @param {element}  - Input element
  */
 function pinValid(element) {
     let obj = document.getElementById(element);
@@ -82,7 +82,7 @@ function pinValid(element) {
 
 /**
  * Checks if the visa is valid and displays the appropriate message
- * @param {*} element - Input element
+ * @param {element}  - Input element
  */
 function visaValid(element) {
     let obj = document.getElementById(element);
@@ -97,7 +97,7 @@ function visaValid(element) {
 
 /**
  * Checks if the year is valid and displays the appropriate message
- * @param {*} element - Input element
+ * @param {element} - Input element
  */
 function yearValid(element) {
     let curr_year = new Date().getFullYear();
@@ -113,7 +113,7 @@ function yearValid(element) {
 
 /**
  * Checks if the cvv is valid and displays the appropriate message
- * @param {*} element - Input element
+ * @param {element} - Input element
  */
 function cvvValid(element) {
     let obj = document.getElementById(element);
@@ -128,7 +128,7 @@ function cvvValid(element) {
 
 /**
  * Checks if the mail is valid and displays the appropriate message
- * @param {*} element - Input element
+ * @param {element} - Input element
  */
 function mailValid(element) {
     let obj = document.getElementById(element);
