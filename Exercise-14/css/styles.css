@@ -58,7 +58,7 @@ label, .alert-text{
 .heading{
     padding-left: 8px;
 }
-#fname, #lname, #mail, #contno, #pincode, #cardno, #cardexpyear, #cvv{
+#f-name, #l-name, #mail, #cont-no, #pincode, #card-no, #card-exp-year, #cvv{
     height: 40px;
     width: 100%;
     border: 1px solid #d7d7d7;
@@ -94,7 +94,7 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
 .submit-button:hover{
     cursor: pointer;
 }
-#fname-empty-alert, #lname-empty-alert, #mail-empty-alert, #contno-empty-alert, #pincode-empty-alert, #cardno-empty-alert, #cardexpyear-empty-alert, #cvv-empty-alert, #fname-invalid-alert, #lname-invalid-alert, #mail-invalid-alert, #contno-invalid-alert, #pincode-invalid-alert, #cardno-invalid-alert, #cardexpyear-invalid-alert, #cvv-invalid-alert{
+#f-name-empty-alert, #l-name-empty-alert, #mail-empty-alert, #cont-no-empty-alert, #pincode-empty-alert, #card-no-empty-alert, #card-exp-year-empty-alert, #cvv-empty-alert, #f-name-invalid-alert, #l-name-invalid-alert, #mail-invalid-alert, #cont-no-invalid-alert, #pincode-invalid-alert, #card-no-invalid-alert, #card-exp-year-invalid-alert, #cvv-invalid-alert{
     display: none;
     padding-top: 4px;
 }

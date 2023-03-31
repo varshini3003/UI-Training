@@ -7,11 +7,18 @@ function noAlert(obj, alert_obj){
     obj.style.borderColor = "#d7d7d7";
     alert_obj.style.display = "none";  
 }
-//Checks if the field is empty and displays the appropriate message
+
+/**
+ * Checks if the field is empty and displays the appropriate message
+ * @param {*} element - Input element
+ * @returns true or false
+ */
 function checkEmpty(element) {
     let obj = document.getElementById(element);
     let alert_obj = document.getElementById(element + "-empty-alert");
+    let invalid_alert_obj = document.getElementById(element + "-invalid-alert");
     noAlert(obj, alert_obj);
+    noAlert(obj, invalid_alert_obj);
     if (obj.value == null || obj.value == "") {
         displayAlert(obj, alert_obj);   
         return true;
@@ -22,7 +29,11 @@ function checkEmpty(element) {
     }    
 }
 
-//Checks if the name is valid and displays the appropriate message
+
+/**
+ * Checks if the name is valid and displays the appropriate message
+ * @param {*} element - Input element
+ */
 function nameValid(element) {
     let obj = document.getElementById(element);
     let alert_obj = document.getElementById(element + "-invalid-alert");
@@ -35,7 +46,11 @@ function nameValid(element) {
     }
 }
 
-//Checks if the contact number is valid and displays the appropriate message
+
+/**
+ * Checks if the contact number is valid and displays the appropriate message
+ * @param {*} element - Input element
+ */
 function contactValid(element) {
     let obj = document.getElementById(element);
     let alert_obj = document.getElementById(element + "-invalid-alert");
@@ -48,7 +63,11 @@ function contactValid(element) {
     }
 }
 
-//Checks if the pin number is valid and displays the appropriate message
+
+/**
+ * Checks if the pin number is valid and displays the appropriate message
+ * @param {*} element - Input element
+ */
 function pinValid(element) {
     let obj = document.getElementById(element);
     let alert_obj = document.getElementById(element + "-invalid-alert");
@@ -61,7 +80,10 @@ function pinValid(element) {
     }
 }
 
-//Checks if the visa entered is valid and displays the appropriate message
+/**
+ * Checks if the visa is valid and displays the appropriate message
+ * @param {*} element - Input element
+ */
 function visaValid(element) {
     let obj = document.getElementById(element);
     let alert_obj = document.getElementById(element + "-invalid-alert");
@@ -73,7 +95,10 @@ function visaValid(element) {
     }
 }
 
-//Checks if the year is valid and displays the appropriate message
+/**
+ * Checks if the year is valid and displays the appropriate message
+ * @param {*} element - Input element
+ */
 function yearValid(element) {
     let curr_year = new Date().getFullYear();
     let obj = document.getElementById(element);
@@ -86,7 +111,10 @@ function yearValid(element) {
     }
 }
 
-//Checks if the cvv is valid and displays the appropriate message
+/**
+ * Checks if the cvv is valid and displays the appropriate message
+ * @param {*} element - Input element
+ */
 function cvvValid(element) {
     let obj = document.getElementById(element);
     let alert_obj = document.getElementById(element + "-invalid-alert");
@@ -98,7 +126,10 @@ function cvvValid(element) {
     }
 }
 
-//Checks if the mail is valid and displays the appropriate message
+/**
+ * Checks if the mail is valid and displays the appropriate message
+ * @param {*} element - Input element
+ */
 function mailValid(element) {
     let obj = document.getElementById(element);
     let alert_obj = document.getElementById(element + "-invalid-alert");  
@@ -111,25 +142,41 @@ function mailValid(element) {
         noAlert(obj,alert_obj);
     }
 }
-// Checks if the field is empty and validates each field if it is not empty
+
+/**
+ * Checks if the input is not empty and validates the input
+ */
 function validateForm() {  
-    checkEmpty("fname");
-    nameValid("fname");
-    checkEmpty("lname");
-    nameValid("lname");
-    checkEmpty("mail")
-    mailValid("mail");
     
+    if(!checkEmpty("f-name")){
+        nameValid("f-name");
+    }
     
+    if(!checkEmpty("l-name")){
+        nameValid("l-name");
+    }
     
-    checkEmpty("contno");
-    contactValid("contno");
-    checkEmpty("pincode");
-    pinValid("pincode");
-    checkEmpty("cardno");
-    visaValid("cardno");
-    checkEmpty("cardexpyear");
-    yearValid("cardexpyear");
-    checkEmpty("cvv");
-    cvvValid("cvv");
-}   
+    if(!checkEmpty("mail")){
+        mailValid("mail");
+    }  
+    
+    if(!checkEmpty("cont-no")){
+        contactValid("cont-no");
+    }
+    
+    if(!checkEmpty("pincode")){
+        pinValid("pincode");
+    }
+    
+    if(!checkEmpty("card-no")){
+        visaValid("card-no");
+    }
+    
+    if(!checkEmpty("card-exp-year")){
+        yearValid("card-exp-year");
+    }
+    
+    if(!checkEmpty("cvv")){
+        cvvValid("cvv");
+    }   
+}
