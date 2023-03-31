@@ -29,6 +29,42 @@ $.get('https://mocki.io/v1/4da47fc5-bbf3-4e41-b35f-c88a584bc4b0', function(video
     const video_section = $("#video-section");
     video_section.append(video);
 
+    const playIcon = $('<i>');
+    playIcon.attr('class', 'fa-sharp fa-regular fa-circle-play');
+    video_section.append(playIcon);
+    const pauseIcon = $('<i>');
+    pauseIcon.attr('class', 'fa-sharp fa-regular fa-circle-pause');
+    video_section.append(pauseIcon);
+    video_section.css('position', 'relative');
+    left_container.append(video_section);
+
+    let isPlaying = false;
+    video.on('mouseover', () => {
+        if (isPlaying) {
+            pauseIcon.css('display', 'block');
+        } else {
+            playIcon.css('display', 'block');
+        }
+    });
+
+    playIcon.on('click', () => {
+        pauseIcon.css('display', 'block');
+        playIcon.css('display', 'none');
+        video.get(0).play();
+        isPlaying = true;
+    });
+
+    pauseIcon.on('click', () => {
+        playIcon.css('display', 'block');
+        pauseIcon.css('display', 'none');
+        video.get(0).pause();
+        isPlaying = false;
+    });
+
+    setInterval(() => {
+        pauseIcon.css('display', 'none');
+    }, 5000);
+
     const title = $("<h3>").append(videos.title);
     video_section.append(title);
 

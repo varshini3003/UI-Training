@@ -67,7 +67,24 @@ video{
 	font-size: 20px;
 	letter-spacing: 0.5px;
 }
+i{
+    position: absolute;
+    font-size: 4vw;
+    left: 45%;
+    top: 25%;
+    color: #ffffff;
+}
+i:hover {
+    cursor: pointer;
+}
 
+.fa-circle-play{
+    display: block;
+}
+
+.fa-circle-pause{
+    display: none;
+}
 h3{
 	padding: 8px 0;
 }
@@ -192,5 +209,8 @@ footer{
 	.hidden-ruler{
 		display: block;
 		margin: 0px 0px 15px 0px;
+	}
+	i{
+		top: 15%;
 	}
 }
