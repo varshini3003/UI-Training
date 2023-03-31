@@ -2,9 +2,9 @@
 @import "_mixins";
 * {
 	box-sizing: border-box;
-	background-color: $background-color_black;
+	background-color: $background-color-black;
 	margin: 0%;
-	font-family: $font-family_condensed;
+	font-family: $font-family-condensed;
 }
 img {
 	width: 100%;
@@ -19,9 +19,9 @@ img {
 .mail {
 	padding-right: 175px;
 	font-weight: 500;
-	color: $color_white;
+	color: $color-white;
 	text-align: right;
-	font-family: $font-family_roboto;
+	font-family: $font-family-roboto;
 	font-size: 25px;
 	order: 1;
 }
@@ -38,7 +38,7 @@ img {
 	padding-bottom: 12px;
 }
 .surname {
-	font-family: $font-family_roboto;
+	font-family: $font-family-roboto;
 	font-weight: 700;
 }
 .designation {
@@ -46,22 +46,22 @@ img {
 	font-size: 50px;
 	&:not(.product) {
 		color: $color_gray;
-		font-family: $font-family_roboto;
+		font-family: $font-family-roboto;
 	}
 }
 .bold-text {
 	color: $color_green;
-	font-family: $font-family_roboto;
+	font-family: $font-family-roboto;
 }
 .product {
 	color: $color_blue;
-	font-family: $font-family_roboto;
+	font-family: $font-family-roboto;
 	font-weight: 900;
 }
 
 .text {
 	color: $color_gray;
-	font-family: $font-family_roboto;
+	font-family: $font-family-roboto;
 	text-align: center;
 	font-weight: 700;
 	font-size: 50px;
@@ -70,7 +70,7 @@ img {
 .footer-text {
     @extend .text;
 	@include margin(100px, 0px, 90px, 0px);
-	color: $color_white;
+	color: $color-white;
 	font-size: 20px;
 }
 .container {
@@ -109,17 +109,17 @@ img {
 	@include margin(100px, 0px, 0px, 0px);
 }
 .fa {
-	border: 1px solid $color_white;
+	border: 1px solid $color-white;
 	padding: 10px;
 	font-size: 1.85rem;
 	margin: 8px;
 	text-align: center;
 	text-decoration: none;
-	background-color: $background-color_black;
+	background-color: $background-color-black;
 	border-radius: 500px;
 	height: 53px;
 	width: 53px;
-	color: $color_white;
+	color: $color-white;
 	&:hover {
 		opacity: 0.7;
 	}
