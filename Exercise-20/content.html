@@ -3,24 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
         <link rel="stylesheet" href="./css/styles.css">
         <title>Pocket Notes</title>
     </head>
-    <body onload="showAll()">
+    <body>
         <header>
             <div id="logo">Pocket Notes</div>
             <div class="edit-buttons">
-                <button class="click-btn" id="deleteall-btn" onclick="openNav('deleteall-alert')">DELETE ALL</button>
-                <button class="click-btn" id="new-btn" onclick="openNav('transparency-effect')">NEW</button>
+                <button class="click-btn" id="delete-btn" onclick="openNav('delete-alert')">DELETE</button>
+                <button class="click-btn" id="edit-btn" onclick="openNav('transparency-effect-edit')">EDIT</button>
             </div>
-            <div class="transparency-effect" id="transparency-effect">
+            <div class="transparency-effect" id="transparency-effect-edit">
                 <div id="new-note-panel" class="sidepanel">
                     <div class="head-bar">
-                        <div class="head-bar-txt">NEW NOTE</div>
-                        <a class="closebtn" onclick="closeNav('transparency-effect')">&times;</a>
+                        <div class="head-bar-txt">EDIT NOTE</div>
+                        <a class="closebtn" onclick="closeNav('transparency-effect-edit')">&times;</a>
                     </div>
                     <div class="text-inputs">
                         <input type="text" name="note-title" id="note-title" placeholder="Notes Title">
@@ -43,22 +43,21 @@
                 </div>
             </div>
         </header>
-        <div class="whole-content" id="whole-content">
-            <div class="empty-msg" id="empty-msg">
-                <img src="assets/cube-thin-svgrepo-com.svg">
-                <div> Notes you add appear here </div>
-            </div>
-            <div class="grid" id="grid"></div>
-            <div class="alert-confirm" id="deleteall-alert">
-                <div class="alert-dialog" id="deleteall-dialog">
+        <div class="whole-content content-section">
+            <div class="title" id="title"></div>
+            <div class="date" id="date"></div>
+            <div class="img" id="img"></div>
+            <div class="content" id="content"></div>
+            <div class="alert-confirm" id="delete-alert">
+                <div class="alert-dialog" id="delete-dialog">
                     <div class="head-bar">
                         <div class="head-bar-txt">CONFIRM DELETE</div>
-                        <a class="closebtn" onclick="closeNav('deleteall-alert')">&times;</a>
+                        <a class="closebtn" onclick="closeNav('delete-alert')">&times;</a>
                     </div>
                     <div class="ask-confirm">
-                        Are you sure you want to delete all notes?
+                        Are you sure you want to delete this note?
                     </div>
-                    <button class="click-btn confirm-btn" id="deleteall-confirm-btn">YES, DELETE</button>
+                    <button class="click-btn confirm-btn" id="delete-confirm-btn">YES, DELETE</button>
                 </div>
             </div>
         </div>

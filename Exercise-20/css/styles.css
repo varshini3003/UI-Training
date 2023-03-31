@@ -1,13 +1,9 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 body {
 	background-color: #010100;
 	margin: 0;
 	font-family: 'Lato';
 }
+
 header {
 	background-color: #021c2e;
 	margin: 0;
@@ -15,16 +11,20 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: fixed;
 }
+
 #logo {
 	font-family: 'IBM Plex Sans';
 	color: white;
 	padding: 20px;
 }
+
 .edit-buttons {
 	display: flex;
 	padding: 20px;
 }
+
 .click-btn {
 	border-radius: 200px;
 	padding: 5px 20px 5px 20px;
@@ -33,23 +33,33 @@ header {
 	border: 1px;
 	color: white;
 }
-#delete-all-btn {
+
+#deleteall-btn {
 	background-color: #a80000;
 }
+
 #new-btn {
 	background-color: #b355b6;
 }
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* @keyframes slideIn {
+	0% { left: 100%; }
+	100% { left: 0; }
+} */
+
 .sidepanel {
 	background-color: #010100;
 	width: 35%;
 	padding: 25px;
 	color: white;
 }
-@keyframes fadeIn {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-}
-#transparency-effect {
+
+.transparency-effect {
 	top: 0;
 	right: 0;
 	height: 100%;
@@ -60,7 +70,8 @@ header {
 	flex-direction: row-reverse;
 	animation: fadeIn 0.5s;
 }
-.new-note-bar {
+
+.head-bar {
 	background-color: #021c2e;
 	color: white;
 	padding: 10px;
@@ -69,10 +80,12 @@ header {
 	align-items: center;
 	
 }
-.new-note-bar > a {
+
+.head-bar > a {
 	text-decoration: none;
 	color: white;
 }
+
 input {
 	color: white;
 	border: none;
@@ -82,10 +95,12 @@ input {
 	max-width: 100%;
 	resize: both;
 }
-#notes-title {
+
+#note-title {
 	margin-top: 30px;
 	font-size: 20px;
 }
+
 #note-content {
 	color: white;
 	border: none;
@@ -97,6 +112,7 @@ input {
 	font-family: inherit;
 	overflow-y: auto;
 }
+
 .sidepanel-footer {
 	position: absolute;
 	bottom: 30px;
@@ -104,11 +120,13 @@ input {
 	justify-content: space-between;
 	width: inherit;
 }
+
 .color-palette {
 	display: flex;
 	justify-content: space-evenly;
 	color: #010100;
 }
+
 .color-btn {
 	border-radius: 100%;
 	width: 25px;
@@ -117,27 +135,36 @@ input {
 	border: 1px;
 	margin: 0 5px 0 5px;
 }
+
 #lavender-btn {
 	background-color: #eacded;
 	color: #010100;
 }
+
 #ivory-btn {
 	background-color: #fcfcfc;
 	color: #010100;
 }
+
 #orange-btn {
 	background-color: #feca73;
 	color: #010100;
 }
-#lightred-btn {
-	background-color: #feca73;
+
+#green-btn {
+	background-color: #e5ee90;
 	color: #010100;
 }
+
+#lightred-btn {
+	background-color: #ffa68a;
+	color: #010100;
+}
+
 #add-btn {
 	background-color: #b355b6;
-    position: relative;
-    right: 10%;
 }
+
 .empty-msg {
 	width: 100%;
 	text-align: center;
@@ -146,3 +173,62 @@ input {
 	display: block;
 }
 
+#whole-content {
+	width: 100%;
+	display: grid;
+	padding-top: 60px;
+}
+
+.grid {
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 250px);
+	justify-content: center;
+	align-content: space-around;
+	column-gap: 20px;
+	row-gap: 20px;
+}
+
+.grid-block {
+	background-color: white;
+	width: 250px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.alert-confirm {
+	display: none;
+	position: fixed;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: #021c2ea9;
+}
+
+.alert-dialog {
+	background-color: #010100;
+	padding: 10px;
+	width: 35%;
+	text-align: center;
+}
+
+.ask-confirm {
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+.confirm-btn {
+	background-color: #b355b6;
+	margin: 5px;
+}
+
+#edit-btn {
+	background-color: #b355b6;
+}
+
+#delete-btn {
+	background-color: #a80000;
+}
